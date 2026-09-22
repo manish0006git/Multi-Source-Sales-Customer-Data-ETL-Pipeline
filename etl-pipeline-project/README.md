@@ -149,5 +149,4 @@ All paths, database URIs, and API endpoints live in `config/config.yaml` — not
 MIT License — free to use and adapt.
 
 ## 👤 Author
-
-Macsen — B.E. Computer Engineering, aspiring Data Engineer.
+Manish Bawa — B.E. Computer Engineering, aspiring Data Engineer.
