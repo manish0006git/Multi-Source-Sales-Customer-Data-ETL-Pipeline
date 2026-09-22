@@ -1,0 +1,16 @@
+transaction_id,customer_id,customer_name,customer_region,product_id,product_name,category,quantity,unit_price,transaction_date
+1001,C001,Aarav Sharma,West,P001,Wireless Mouse,Electronics,2,499.00,2026-01-05
+1002,C002,Priya Nair,South,P002,Office Chair,Furniture,1,3499.00,2026-01-05
+1003,C001,Aarav Sharma,West,P003,Notebook Pack,Stationery,5,120.00,2026-01-06
+1004,C003,Rahul Verma,North,P001,Wireless Mouse,Electronics,3,499.00,2026-01-06
+1005,C004,Sneha Iyer,East,P004,LED Desk Lamp,Electronics,1,899.00,2026-01-07
+1006,C002,Priya Nair,South,P005,Standing Desk,Furniture,1,8999.00,2026-01-07
+1007,C005,Vikram Rao,West,P002,Office Chair,Furniture,2,3499.00,2026-01-08
+1008,C003,Rahul Verma,North,P006,Backpack,Accessories,1,1499.00,2026-01-08
+1009,C006,Ananya Das,South,P003,Notebook Pack,Stationery,10,120.00,2026-01-09
+1010,C004,Sneha Iyer,East,P001,Wireless Mouse,Electronics,1,499.00,2026-01-09
+1011,C007,Karan Mehta,North,P007,Bluetooth Speaker,Electronics,2,1999.00,2026-01-10
+1012,C001,Aarav Sharma,West,P005,Standing Desk,Furniture,1,8999.00,2026-01-10
+1013,C008,Isha Kapoor,South,P006,Backpack,Accessories,3,1499.00,2026-01-11
+1014,C005,Vikram Rao,West,P004,LED Desk Lamp,Electronics,2,899.00,2026-01-11
+1015,C006,Ananya Das,South,P007,Bluetooth Speaker,Electronics,1,1999.00,2026-01-12

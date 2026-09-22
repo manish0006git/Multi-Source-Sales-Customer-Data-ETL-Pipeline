@@ -1,0 +1,13 @@
+version: "3.9"
+
+services:
+  etl-pipeline:
+    build: .
+    container_name: etl_pipeline
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./config:/app/config
+    command: ["python", "-m", "src.pipeline"]

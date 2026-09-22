@@ -1,0 +1,39 @@
+# Central configuration for the ETL pipeline.
+# Secrets (DB URIs, API keys) are pulled from environment variables (.env);
+# this file holds non-secret, structural configuration.
+
+extract:
+  csv:
+    input_path: "data/sample_data.csv"
+  api:
+    endpoint_env_var: "API_BASE_URL"
+    timeout_seconds: 10
+  database:
+    source_table: "raw_sales"
+
+transform:
+  drop_duplicates: true
+  required_columns:
+    - "transaction_id"
+    - "customer_id"
+    - "product_id"
+    - "quantity"
+    - "unit_price"
+    - "transaction_date"
+  null_strategy: "drop"      # options: drop, fill_zero, fill_mean
+  currency_conversion:
+    enabled: false
+    target_currency: "USD"
+
+load:
+  warehouse:
+    fact_table: "fact_sales"
+    dim_tables:
+      - "dim_customer"
+      - "dim_product"
+      - "dim_date"
+    if_exists: "replace"     # options: replace, append
+
+logging:
+  log_dir: "logs"
+  log_file: "pipeline.log"
